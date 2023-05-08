@@ -1,0 +1,170 @@
+.otp-input {
+  border: none;
+  outline: none; 
+  text-align: center;
+  width: 35px;
+  font-size: 24px;
+}
+
+.otp-input:hover {
+  border: none; /* Remove the border on hover */
+}
+
+#phoneNumberInput {
+  border: none; /* Remove the default border */
+  outline: none; /* Remove the outline when focused */
+  width: 355px;
+  font-size: 24px;
+  border-bottom: 2.5px solid #969696;
+  background-color: #CAD5E2;
+}
+
+#phoneNumberInput:focus {
+  border-bottom: 2.5px solid #383CC1;
+}
+
+
+.otp-child-div {
+  border-bottom: 2.5px solid #969696;
+  width: 42px;
+  height: auto;
+}
+
+.otp-child-div:focus-within {
+  border-bottom: 2.5px solid #383CC1;
+}
+
+.otp-div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-otp-div {
+  position: absolute;
+  width: 455px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  padding-bottom: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: auto;
+}
+
+.main-otp-div>:first-child {
+  align-self: flex-end;
+  margin-right: -40px;
+}
+
+.main-otp-div>:nth-child(3) {
+  color: #758283;
+}
+
+.close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 50px;
+  margin-top: -16px;
+  cursor: pointer;
+  
+}
+
+.otp-btn {
+  cursor: pointer;
+  background-color: #6AC47E;
+  width: 355px;
+  font-size: 18px;
+  color: #fff;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.otp-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  gap: 160px;
+}
+
+.popup {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-div {
+  background-color: #383CC1;
+  color: #fff;
+  width: 335px;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.dashboard-input-div>:first-child {
+  color: #646b6c;
+}
+
+
+@media (max-width:500px) {
+  .main-otp-div {
+    width: 290px;
+    margin-left: -10px;
+  }
+
+  .otp-links {
+    font-size: 12px;
+    gap: 110px;
+  }
+
+  .otp-btn {
+    width: 280px;
+  }
+
+  #phoneNumberInput {
+    width: 280px;
+  }
+
+  .otp-input {
+    width: 26px;
+  }
+
+  .otp-child-div {
+    width: 28px;
+  }
+
+  .login-div {
+    width: 280px;
+  }
+
+  .main-otp-div>:nth-child(3) {
+    font-size: 15px;
+  }
+}
